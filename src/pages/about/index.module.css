@@ -1,0 +1,113 @@
+.section{
+    padding: 1rem 0 ;
+}
+.about__container {
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 4rem;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about__img{
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+
+}
+.about__info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: var(--mb-2);
+
+}
+
+.about__box{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem 1.75rem;
+}
+.about__icon{
+    font-size: 1.5rem;
+    color: var(--wine-color);
+    margin-bottom: var(--mb-0-5);
+}
+
+.about__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.5rem;
+}
+
+.about__subtitle{
+    font-size: var(--smaller-font-size);
+}
+.__industry{
+    margin-top: 15px;
+}
+.about__subtitle__p{
+    display: flex;
+    justify-content: flex-start;
+}
+.cvButton {
+    margin-top: 1rem;
+}
+.section__title{
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: var(--mb-0-25);
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .about__box{
+        padding: 0.75rem 0.5rem;
+    }
+    .about__data{
+        text-align: center;
+    }
+    .about__info{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 0.5rem;
+    }
+    .section__title {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+    .about__description{
+        font-size: var(--smaller-font-size);
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: 1rem;
+    }
+    .about__list {
+        margin-top: 5px;
+        text-align: left;
+        padding-left: 1.5rem;
+        font-size: var(--smaller-font-size);
+    }
+
+    .about__list li {
+        margin-bottom: 0.5rem;
+        line-height: 1;
+    }
+
+    .about__description, .section__title {
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 0 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
