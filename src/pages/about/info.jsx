@@ -7,7 +7,7 @@ const Info = () => {
             <div className={styles.about__box}>
                 <i className={`bx bx-award ${styles.about__icon}`}></i>
                 <h3 className={styles.about__title}>Our Expertise</h3>
-                <p className={styles.about__description}>
+                <p className={styles.about__list}>
                     At Fortunaé IT Solutions, we leverage the latest advancements in technology to
                     deliver world-class solutions. Our core competencies include:
                 </p>

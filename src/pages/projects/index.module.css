@@ -31,14 +31,14 @@
 .services__content {
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--container-color);
+    background-color: deepskyblue;
     padding: 6rem 0 2rem 2.5rem;
 }
 
 .services__icon {
     display: block;
     font-size: 2rem;
-    color: var(--wine-color);
+    color: black;
     margin-bottom: var(--mb-1);
 }
 
@@ -49,7 +49,7 @@
 }
 
 .services__button {
-    color: var(--wine-color);
+    color: black;
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;

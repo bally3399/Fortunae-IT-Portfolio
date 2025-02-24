@@ -74,24 +74,25 @@ const Projects = () => {
         },
 
         {
-            title: "Live Fullstack Project (Deployed)",
-            description: "Built a cutting-edge application designed to bridge " +
-                "the gap between construction services and client satisfaction. " +
-                "It leverages innovative technologies to streamline interactions, " +
-                "enhance efficiency, and ensure a seamless experience for both service" +
-                " providers and clients.",
-            icon: "uil-layers",
-            projects: [
+            "title": "Live Fullstack Project (Deployed)",
+            "description": "Developed a modern hotel booking application " +
+                "that provides a seamless and efficient booking experience" +
+                " for travelers. The platform enables users to search for hotels," +
+                " view details, make reservations," +
+                " and manage bookings with ease. It integrates advanced " +
+                "features to enhance user experience and streamline hotel management.",
+            "icon": "uil-layers",
+            "projects": [
                 {
-                    projectName: "Hotel Booking App",
-                    githubLink: ""
+                    "projectName": "Hotel Booking App",
+                    "githubLink": ""
                 }
             ]
         },
 
 
         {
-            title: "Backend Project (Deployed)",
+            title: "Live Fullstack Project (Deployed)",
             description: "The Fortunae Library Management System API is a backend" +
                 " application built using .NET Core with Clean Architecture principles. It provides a RESTful API for managing books, users, " +
                 "and borrowing activities in an online library system.",
@@ -99,10 +100,11 @@ const Projects = () => {
             projects: [
                 {
                     projectName: "Library Management System",
-                    githubLink: "https://quagga-inky.vercel.app/"
+                    githubLink: ""
                 }
             ]
         },
+
 
     ];
 
@@ -133,5 +135,4 @@ const Projects = () => {
         </section>
     );
 };
-
-export default Projects;
+export default Projects

@@ -22,7 +22,7 @@
 }
 
 .contact__card {
-    background-color: var(--container-color);
+    background-color: deepskyblue;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     border-radius: 1rem;
@@ -33,7 +33,7 @@
 .contact__card_icon {
     font-size: 2rem;
     margin-bottom: var(--mb-0-25);
-    color: var(--wine-color);
+    color: black;
 }
 
 .contact__card_title,
@@ -51,7 +51,7 @@
 }
 
 .contact__button {
-    color: dodgerblue;
+    color: black;
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;

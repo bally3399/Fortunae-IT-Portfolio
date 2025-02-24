@@ -8,12 +8,23 @@
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+
 }
 .about__img{
     width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
 
+}
+.about__description{
+    margin-bottom: var(--mb-2);
+    background-color: deepskyblue;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem 1.75rem;
 }
 .about__info{
     display: grid;
@@ -24,16 +35,17 @@
 }
 
 .about__box{
-    background-color: var(--container-color);
+    background-color: deepskyblue;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 1.5rem 1.75rem;
+
 }
 .about__icon{
     font-size: 1.5rem;
-    color: var(--wine-color);
+    color: black;
     margin-bottom: var(--mb-0-5);
 }
 
@@ -48,6 +60,14 @@
 }
 .__industry{
     margin-top: 15px;
+    margin-bottom: var(--mb-2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem 1.75rem;
+    background-color: deepskyblue;
+
 }
 .about__subtitle__p{
     display: flex;
@@ -87,6 +107,7 @@
         text-align: left;
         margin-left: 20px;
         margin-bottom: 1rem;
+
     }
     .about__list {
         margin-top: 5px;

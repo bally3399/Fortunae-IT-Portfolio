@@ -100,7 +100,7 @@ img{
 .section__subtitle{
   display: block;
   margin-bottom: 1rem;
-  color: dodgerblue;
+  color: deepskyblue;
   font-size: var(--h3-font-size);
 }
 
@@ -125,7 +125,7 @@ img{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: dodgerblue;
+    background-color: deepskyblue;
     color: var(--container-color);
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;

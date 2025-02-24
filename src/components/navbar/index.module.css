@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--body-color);
+    background-color: deepskyblue;
     padding: 0 1rem;
     z-index: 10;
 }
@@ -28,6 +28,7 @@
 .nav__list {
     display: flex;
     column-gap: 1rem;
+
 }
 
 .nav__link {
@@ -36,7 +37,7 @@
     flex-direction: column;
     font-weight: var(--font-medium);
     transition: .3s;
-    color: dodgerblue;
+    color: black;
 }
 
 .nav__icon,

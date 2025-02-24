@@ -12,40 +12,41 @@ const About = () => {
             <div className={styles.about__container}>
                 <div className={styles.about__data}>
                     <Info/>
-
-                    <div className={styles.about__description}>
-                        <h1>
-                            Let’s Build the Future Together
-                        </h1>
-                        At Fortunaé IT Solutions, we don’t just create technology—we craft experiences that drive businesses forward. Whether you need a custom application, a cloud-based infrastructure, or expert IT consulting, we are here to help.
-                    </div>
-                    <div className={styles.__industry}>
-                        <h1>
-                            Industries We Serve
-                        </h1>
-                        <p>
-                            We work across multiple industries, including:
-                        </p>
-                        <li>
-                            Finance & FinTech
-                        </li>
-                        <li>
-                            Healthcare & MedTech
-                        </li>
-                        <li>
-                            E-commerce & Retail
-                        </li>
-                        <li>
-                            Real Estate & Property Management
-                        </li>
-                        <li>
-                            Education & E-learning
-                        </li>
+                     <div className={styles.about__description}>
+                            <h1>
+                                Let’s Build the Future Together
+                            </h1>
+                            At Fortunaé IT Solutions, we don’t just create technology—we craft experiences that drive
+                            businesses forward. Whether you need a custom application, a cloud-based infrastructure, or
+                            expert IT consulting, we are here to help.
+                        </div>
+                        <div className={styles.__industry}>
+                            <h1>
+                                Industries We Serve
+                            </h1>
+                            <p>
+                                We work across multiple industries, including:
+                            </p>
+                            <li>
+                                Finance & FinTech
+                            </li>
+                            <li>
+                                Healthcare & MedTech
+                            </li>
+                            <li>
+                                E-commerce & Retail
+                            </li>
+                            <li>
+                                Real Estate & Property Management
+                            </li>
+                            <li>
+                                Education & E-learning
+                            </li>
+                        </div>
                     </div>
 
                 </div>
 
-            </div>
         </section>
     )
 }
