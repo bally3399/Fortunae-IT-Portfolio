@@ -22,7 +22,10 @@ const Contact = () => {
                         <i className={`bx bxl-home ${styles.contact__card_icon}`}></i>
                         <h3 className={styles.contact__card_title}>Office Address</h3>
                         <span className={styles.contact__card_data}>Manchester, United Kingdom</span>
-
+                        <a href="mailto:Fortunaefilms@gmail.com" className={styles.contact__button}>
+                            Write Fortunaé IT Solutions
+                            <i className={`bx bx-right-arrow-alt ${styles.contact__button_icon}`}></i>
+                        </a>
                     </div>
                 </div>
             </div>
