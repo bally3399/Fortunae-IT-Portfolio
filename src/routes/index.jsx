@@ -12,5 +12,6 @@ export const ROUTE = [
                 element: <Home/>,
             }
         ]
-    }
+    },
+
 ]

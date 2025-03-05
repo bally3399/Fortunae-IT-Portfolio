@@ -1,36 +1,48 @@
-import React from 'react';
+import React from "react";
 import styles from "./index.module.css";
 
-const Contact = () => {
+const ContactForm = () => {
     return (
-        <section className={styles.section} id="contact">
-            <h2 className={styles.section__title}>Get in touch</h2>
-            <span className="section__subtitle">Contact Fortunaé IT Solutions</span>
+        <div className={styles.contactContainer}>
+            <div className={styles.contactLeft}>
+                <h2>GET IN TOUCH</h2>
+                <p>
+                    Let's discuss! Get in touch with Fortune IT. Let's Build Something
+                    Great Together.
+                </p>
+                <h3>COMMON FAQs</h3>
+                <p>
+                    Find quick answers to common questions about our process, services,
+                    and consultations before booking your meeting.
+                </p>
+                <h4>See all</h4>
+                <h3>Other ways to reach us</h3>
+                <p>Send us an email</p>
+                <a href="mailto:Fortuneitlines@gmail.com">Fortuneitlines@gmail.com</a>
+                <p>Find us</p>
+                <h4>Manchester, United Kingdom</h4>
+                <br />
+                <h4>Get directions</h4>
+            </div>
 
-            <div className={styles.contact__container}>
-                <div className={styles.contact__info}>
-                    <div className={styles.contact__card}>
-                        <i className={`bx bx-mail-send ${styles.contact__card_icon}`}></i>
-                        <h3 className={styles.contact__card_title}>Email Address</h3>
-                        <span className={styles.contact__card_data}>Fortunaefilms@gmail.com</span>
-                        <a href="mailto:Fortunaefilms@gmail.com" className={styles.contact__button}>
-                            Write Fortunaé IT Solutions
-                            <i className={`bx bx-right-arrow-alt ${styles.contact__button_icon}`}></i>
-                        </a>
-                    </div>
-                    <div className={styles.contact__card}>
-                        <i className={`bx bxl-home ${styles.contact__card_icon}`}></i>
-                        <h3 className={styles.contact__card_title}>Office Address</h3>
-                        <span className={styles.contact__card_data}>Manchester, United Kingdom</span>
-                        <a href="mailto:Fortunaefilms@gmail.com" className={styles.contact__button}>
-                            Write Fortunaé IT Solutions
-                            <i className={`bx bx-right-arrow-alt ${styles.contact__button_icon}`}></i>
-                        </a>
-                    </div>
+            <div className={styles.contactRight}>
+                <div className={styles.contactForm}>
+                    <h3>Got A Message?</h3>
+                    <p>Please fill out the input box below to get in touch with us!</p>
+                    <form>
+                        <div className={styles.inputGroup}>
+                            <input type="text" placeholder="First name" />
+                            <input type="text" placeholder="Last name" />
+                        </div>
+                        <input type="email" placeholder="Email address" className={styles.fullWidth} />
+                        <input type="tel" placeholder="+234  Phone number" className={styles.fullWidth} />
+                        <textarea placeholder="Type your message here"></textarea>
+                        <button type="submit">Send message</button>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
-export default Contact;
+export default ContactForm;

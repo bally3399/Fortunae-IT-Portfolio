@@ -1,15 +1,6 @@
 .home__container{
     padding: 0;
 }
-.home__container1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    padding: 8rem 0;
-    background-color: white;
-}
 
 .home__content{
     grid-template-columns: 116px repeat(2, 1fr);
@@ -33,13 +24,7 @@
     color: var(--wine-color);
 }
 
-.home__title{
-    margin-top: -30px;
-    margin-left: 50px;
-    font-size: 2.8rem;
-    margin-bottom: var(--mb-0-25);
-    white-space: nowrap;
-}
+
 .home__subtitle{
     position: relative;
     font-size: var(--h3-font-size);
@@ -58,15 +43,7 @@
     left: 0;
     top: 1rem;
 }
-.home__description{
-    max-width: 600px;
-    line-height: 1.5;
-    text-align: left;
-    margin-left: 50px;
 
-
-
-}
 
 
 .home__hand{
@@ -169,3 +146,93 @@
 }
 
 
+.fortunaeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contentWrapper {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.fortunaeTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fortunaeDescription {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.imageWrapper {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.fortunaeImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.buttonWrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.say-hello-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.say-hello-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .fortunaeContainer {
+        padding: 20px;
+    }
+
+
+    .contentWrapper {
+        margin-bottom: 20px;
+    }
+
+    .fortunaeTitle {
+        font-size: 2em;
+    }
+
+    .fortunaeDescription {
+        font-size: 0.9em;
+    }
+
+    .imageWrapper {
+        margin-bottom: 20px;
+    }
+
+    .say-hello-button {
+        width: 100%;
+        max-width: 200px;
+    }
+}

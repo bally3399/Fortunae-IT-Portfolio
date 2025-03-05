@@ -1,50 +1,56 @@
-import React, { useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import styles from './index.module.css';
-import Hamburger from 'hamburger-react';
+import styles from "./index.module.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
+import Logo from "../../assets/fortunaeLogo.png";
 
-const Navbar = () => {
-    const [activeNav, setActiveNav] = useState('/');
-    const [toggle, setToggle] = useState(false);
+const Navbar = ({ aboutRef, projectsRef, contactRef, homeRef }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
-    const handleNavClick = (path) => {
-        setActiveNav(path);
-        setToggle(false);
+    const scrollToRef = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const navLinks = [
+        { path: "/", label: "HOME", ref: homeRef },
+        { path: "/about", label: "ABOUT US", ref: aboutRef },
+        { path: "/projects", label: "PROJECTS", ref: projectsRef },
+    ];
+
     return (
-        <header className={styles.header}>
-            <nav className={`${styles.nav}`}>
-                <Link to="/#home" className={styles.nav__logo} onClick={() => handleNavClick('/')}>FortunaeIT</Link>
-                <div className={`${styles.nav__menu} ${toggle ? styles.show_menu : ''}`}>
-                    <ul className={`${styles.nav__list} grid`}>
-                        {['home', 'about', 'projects', 'contact'].map(section => (
-                            <li className={styles.nav__item} key={section}>
-                                <Link
-                                    smooth
-                                    to={`/#${section}`}
-                                    className={`${styles.nav__link} ${activeNav === `/${section}` ? styles.active_link : ''}`}
-                                    onClick={() => handleNavClick(`/${section}`)}
-                                >
-                                    {section.charAt(0).toUpperCase() + section.slice(1)}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                    <i className={`uil uil-times ${styles.nav__close}`} onClick={() => setToggle(false)}></i>
-                </div>
-                <div className={styles.nav__toggle}>
-                    <button
-                        aria-expanded={toggle}
-                        aria-label="Toggle navigation"
-                        onClick={() => setToggle(!toggle)}
-                        className={styles.hamburger__button}
+        <nav className={styles.navbar}>
+            <div style={{display:'flex', gap: '7px'}}>
+                <img src={Logo} alt='Logo'/>
+                <h1 className={styles.brandName}>Fortunaé IT</h1>
+            </div>
+
+            <div className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? <FiX /> : <FiMenu />}
+            </div>
+
+            <div className={`${styles.navLinks} ${isOpen ? styles.showMenu : ""}`}>
+                {navLinks.map(({ path, label, ref }) => (
+                    <div
+                        key={path}
+                        className={styles.navItem}
+                        onClick={() => {
+                            if (ref) {
+                                scrollToRef(ref);
+                            } else {
+                                navigate(path);
+                            }
+                        }}
                     >
-                        <Hamburger toggled={toggle} toggle={setToggle} color="dodgerblue" />
-                    </button>
-                </div>
-            </nav>
-        </header>
+                        {label}
+                    </div>
+                ))}
+            </div>
+
+            <div className={styles.desktopOnly} onClick={() => scrollToRef(contactRef)}>
+                <button className={styles.getStarted}>Contact Us</button>
+            </div>
+        </nav>
     );
 };
 

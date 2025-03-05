@@ -1,54 +1,31 @@
-import React from "react";
-import styles from "./index.module.css";
+import React from 'react';
+import styles from './index.module.css';
+import Image1 from '../../assets/Frame 26.png';
+import Image2 from '../../assets/Frame 27.png';
 import Info from "./info";
 
-
-const About = () => {
+const HistorySection = () => {
     return (
-        <section className={styles.section} id="about">
-            <h2 className={styles.section__title}>About Fortunaé IT Solutions</h2>
-            <span className="section__subtitle">Introduction</span>
-
-            <div className={styles.about__container}>
-                <div className={styles.about__data}>
-                    <Info/>
-                     <div className={styles.about__description}>
-                            <h1>
-                                Let’s Build the Future Together
-                            </h1>
-                            At Fortunaé IT Solutions, we don’t just create technology—we craft experiences that drive
-                            businesses forward. Whether you need a custom application, a cloud-based infrastructure, or
-                            expert IT consulting, we are here to help.
-                        </div>
-                        <div className={styles.__industry}>
-                            <h1>
-                                Industries We Serve
-                            </h1>
-                            <p>
-                                We work across multiple industries, including:
-                            </p>
-                            <li>
-                                Finance & FinTech
-                            </li>
-                            <li>
-                                Healthcare & MedTech
-                            </li>
-                            <li>
-                                E-commerce & Retail
-                            </li>
-                            <li>
-                                Real Estate & Property Management
-                            </li>
-                            <li>
-                                Education & E-learning
-                            </li>
-                        </div>
-                    </div>
-
+        <main>
+            <Info/>
+            <div className={styles.historyContainer}>
+                <div className={styles.contentSection}>
+                    <h1 className={styles.historyTitle}>OUR HISTORY</h1>
+                    <p className={styles.historyText}>
+                        Fortunae IT Solutions began as a small team of passionate developers and IT professionals committed to delivering high-quality digital solutions. Recognizing the growing demand for scalable software, cloud solutions, and IT consulting, we expanded our expertise to serve businesses across multiple industries. Over the years, we have built a reputation for innovation, reliability, and excellence, helping everyone embrace digital transformation. Today, Fortunae IT Solutions continues to grow, providing cutting-edge solutions tailored to the evolving needs of businesses worldwide.
+                    </p>
                 </div>
+                <div className={styles.imageSection}>
+                    <div className={styles.imageWrapper}>
+                        <img src={Image1} alt="Team meeting" className="history-image" />
+                    </div>
+                    <div className={styles.imageWrapper}>
+                        <img src={Image2} alt="Team discussion" className="history-image" />
+                    </div>
+                </div>
+            </div>
+        </main>
+    );
+};
 
-        </section>
-    )
-}
-
-export default About;
+export default HistorySection;

@@ -6,7 +6,6 @@ import "./Layout.css";
 const Layout = () =>{
     return (
         <div className="layout-container">
-            <Navbar/>
             <main className="layout-content">
                 <Outlet/>
             </main>
