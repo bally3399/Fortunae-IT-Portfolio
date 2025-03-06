@@ -18,7 +18,7 @@ const ContactForm = () => {
                 <h4>See all</h4>
                 <h3>Other ways to reach us</h3>
                 <p>Send us an email</p>
-                <a href="mailto:Fortuneitlines@gmail.com">Fortuneitlines@gmail.com</a>
+                <a href="mailto:Fortunaefilms@gmail.com">Fortunaefilms@gmail.com</a>
                 <p>Find us</p>
                 <h4>Manchester, United Kingdom</h4>
                 <br />
