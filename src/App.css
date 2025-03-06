@@ -149,6 +149,9 @@ img{
   align-items: center;
 }
 @media (max-width:768px) {
-  display: inline-flex;
-  align-items: center;
+  .button__flex{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+  }
 }
