@@ -25,9 +25,10 @@ const projectData = [
     {
         id: 3,
         title: 'Live Fullstack Project (Deployed)',
-        name: 'Fortunae Library Management',
-        description: 'A 3D cloth branding website where you can choose the color and shade of your cloth. Built using Vite, React',
-        link: 'https://example.com/project-gamma',
+        name: 'Fortunae Order Pizza App',
+        description: 'A Streamline Pizza App built with Vite-React frontend, where you can place your' +
+            ' order and get your pizza',
+        link: 'https://orderpizza-app-mu.vercel.app',
         image: Image
     },
 ];
