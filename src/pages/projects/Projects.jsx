@@ -4,7 +4,7 @@ import Image from "../../assets/Frame 8.png";
 const projectData = [
     {
         id: 1,
-        title: 'Live Fullstack Project (Deployed)',
+        title: 'Fortunae 3D Cloth Branding App',
         name: 'Fortunae 3D Cloth Branding App',
         description: 'A 3D cloth branding website where you can ' +
             'choose the color and shade of your cloth.' +
@@ -22,15 +22,7 @@ const projectData = [
         link: 'https://job-portal-theta-inky.vercel.app',
         image: Image
     },
-    {
-        id: 3,
-        title: 'Live Fullstack Project (Deployed)',
-        name: 'Fortunae Order Pizza App',
-        description: 'A Streamline Pizza App built with Vite-React frontend, where you can place your' +
-            ' order and get your pizza',
-        link: 'https://orderpizza-app-mu.vercel.app',
-        image: Image
-    },
+
 ];
 
 const Projects = () => {
