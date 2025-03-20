@@ -277,8 +277,8 @@
 }
 
 .imageWrapper:last-child {
-    top: 10px;
-    left: 220px;
+    top: 220px;
+    left: 240px;
     width: 100%;
     max-width: 300px;
     z-index: 2;
@@ -330,6 +330,7 @@
     .imageWrapper:last-child {
         top: -20px;
         left: 0;
+        width: 90%;
         z-index: 2;
         margin-bottom: 0;
     }

@@ -17,10 +17,10 @@ const HistorySection = () => {
                 </div>
                 <div className={styles.imageSection}>
                     <div className={styles.imageWrapper}>
-                        <img src={Image1} alt="Team meeting" className="history-image" />
+                        <img src={Image1} alt="Team meeting" className={styles.historyImage} />
                     </div>
                     <div className={styles.imageWrapper}>
-                        <img src={Image2} alt="Team discussion" className="history-image" />
+                        <img src={Image2} alt="Team discussion" className={styles.historyImage} />
                     </div>
                 </div>
             </div>

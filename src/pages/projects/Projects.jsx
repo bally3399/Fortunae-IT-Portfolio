@@ -14,12 +14,50 @@ const projectData = [
     },
     {
         id: 2,
-        title: 'Live Fullstack Project (Deployed)',
-        name: 'Fortunae Foundit',
-        description: 'A streamlined job portal app built with a' +
-            ' Node.js backend and Vite-React frontend, ' +
-            'where employers can post jobs and jobseekers can easily apply.',
-        link: 'https://job-portal-theta-inky.vercel.app',
+        title: 'FortunaeIT Admin Dashboard',
+        name: 'FortunaeIT Admin Dashboard',
+        description: 'The SaaS Admin Dashboard is a full-stack web application' +
+            ' developed to demonstrate a team’s expertise in building modern, ' +
+            'scalable software solutions. Designed for a Software-as-a-Service platform,' +
+            ' the project features a responsive frontend built with React.js and styled ' +
+            'using Material UI and Tailwind CSS, alongside a robust backend built with java (Spring boot)' +
+            ' and MongoDB. Key functionalities include JWT-based user authentication with' +
+            ' role-based access control (admin vs. regular users), CRUD operations for user and data management,' +
+            'for visualizing user statistics and revenue trends. Optional real-time notifications' +
+            ' via Socket.io enhance admin capabilities.',
+        link: 'https://www.fortunaeitadmindashboard.com',
+        image: Image
+    },
+    {
+        id: 3,
+        title: 'FortunaeIT Hotel Booking Management',
+        name: 'FortunaeIT Hotel Booking Management',
+        description: 'The Hotel Management System is a full-stack application' +
+            ' built with Java Spring Boot for the backend and React for the ' +
+            'frontend. It streamlines hotel operations by enabling room browsing,' +
+            ' booking management, and guest tracking. Spring Boot powers RESTful APIs' +
+            'and integrates with MySQL via Spring Data JPA, while React delivers a ' +
+            'responsive UI with dynamic room listings and booking pages, styled with' +
+            ' separate CSS classes. Deployable on Render (backend) and Vercel' +
+            ' (frontend), this project showcases secure, scalable development for modern hotel administration.',
+        link: 'https://www.fortunaeithotelapp.com',
+        image: Image
+    },
+    {
+        id: 4,
+        title: 'FortunaeIT Library Management System',
+        name: 'FortunaeIT Library Management System',
+        description: 'The Library Management System is a full-stack' +
+            ' application developed using Java Spring Boot for ' +
+            'the backend and React for the frontend. It simplifies' +
+            ' library operations by facilitating book cataloging, ' +
+            'borrowing, and user management. Spring Boot drives RESTful' +
+            ' APIs and connects to Postgres via railway, while React' +
+            ' provides a responsive interface with dynamic book listings ' +
+            'and borrowing pages, styled with separate CSS classes. ' +
+            'Deployable on Render (backend) and Vercel (frontend), this ' +
+            'project demonstrates efficient, scalable solutions for modern library administration.',
+        link: 'https://www.fortunaeitlibraryapp.com',
         image: Image
     },
 
@@ -60,7 +98,6 @@ const Projects = () => {
             <span className={styles.modalClose} onClick={closeModal}>
               &times;
             </span>
-                        <h2>{selectedProject.title}</h2>
                         <h3>{selectedProject.name}</h3>
                         <p>{selectedProject.description}</p>
                         <a

@@ -11,7 +11,7 @@ const ContactForm = () => {
                     Great Together.
                 </p>
                 <p>Send us an email</p>
-                <a href="mailto:Fortunaefilms@gmail.com">Fortunaefilms@gmail.com</a>
+                <a href="mailto:contact@toldbyfortunae.com">contact@toldbyfortunae.com</a>
                 <p>Find us</p>
                 <h4>Manchester, United Kingdom</h4>
                 <br />
