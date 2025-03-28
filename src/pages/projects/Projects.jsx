@@ -22,9 +22,7 @@ const projectData = [
             ' the project features a responsive frontend built with React.js and styled ' +
             'using Material UI and Tailwind CSS, alongside a robust backend built with java (Spring boot)' +
             ' and MongoDB. Key functionalities include JWT-based user authentication with' +
-            ' role-based access control (admin vs. regular users), CRUD operations for user and data management,' +
-            'for visualizing user statistics and revenue trends. Optional real-time notifications' +
-            ' via Socket.io enhance admin capabilities.',
+            ' role-based access control (admin vs. regular users)',
         link: 'https://www.fortunaeitadmindashboard.com',
         image: Image
     },
@@ -37,9 +35,7 @@ const projectData = [
             'frontend. It streamlines hotel operations by enabling room browsing,' +
             ' booking management, and guest tracking. Spring Boot powers RESTful APIs' +
             'and integrates with MySQL via Spring Data JPA, while React delivers a ' +
-            'responsive UI with dynamic room listings and booking pages, styled with' +
-            ' separate CSS classes. Deployable on Render (backend) and Vercel' +
-            ' (frontend), this project showcases secure, scalable development for modern hotel administration.',
+            'responsive UI with dynamic room listings and booking pages',
         link: 'https://www.fortunaeithotelapp.com',
         image: Image
     },
@@ -54,9 +50,7 @@ const projectData = [
             'borrowing, and user management. Spring Boot drives RESTful' +
             ' APIs and connects to Postgres via railway, while React' +
             ' provides a responsive interface with dynamic book listings ' +
-            'and borrowing pages, styled with separate CSS classes. ' +
-            'Deployable on Render (backend) and Vercel (frontend), this ' +
-            'project demonstrates efficient, scalable solutions for modern library administration.',
+            'and borrowing pages, styled with separate CSS classes.',
         link: 'https://www.fortunaeitlibraryapp.com',
         image: Image
     },
