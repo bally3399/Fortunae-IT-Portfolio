@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import Image from "../../assets/Frame 8.png";
 import Image1 from "../../assets/Frame 8 (1).png";
 import Image2 from "../../assets/Frame 8 (2).png";
-import Image3 from "../../assets/Frame 8 (3).png";
+import Image3 from "../../assets/itConsulting.webp";
 import security from "../../assets/Vector (8).png";
 import client from "../../assets/lets-icons_check-fill.png";
 import innovative from"../../assets/hugeicons_bulb.png";
