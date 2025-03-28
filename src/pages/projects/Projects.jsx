@@ -22,7 +22,7 @@ const projectData = [
             ' the project features a responsive frontend built with React.js and styled ' +
             'using Material UI and Tailwind CSS, alongside a robust backend built with java (Spring boot)' +
             ' and MongoDB. Key functionalities include JWT-based user authentication with' +
-            ' role-based access control (admin vs. regular users)',
+            ' role-based access control',
         link: 'https://www.fortunaeitadmindashboard.com',
         image: Image
     },
