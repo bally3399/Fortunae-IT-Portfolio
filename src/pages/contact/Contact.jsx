@@ -7,11 +7,11 @@ const ContactForm = () => {
             <div className={styles.contactLeft}>
                 <h2>GET IN TOUCH</h2>
                 <p>
-                    Let's discuss! Get in touch with Fortune IT. Let's Build Something
+                    Let's discuss! Get in touch with Fortunae IT. Let's Build Something
                     Great Together.
                 </p>
                 <p>Send us an email</p>
-                <a href="mailto:contact@fortunaeitsolutions.com">contact@toldbyfortunae.com</a>
+                <a href="mailto:contact@fortunaeitsolutions.com">contact@fortunaeitsolutions.com</a>
                 <p>Find us</p>
                 <h4>Manchester, United Kingdom</h4>
                 <br />
