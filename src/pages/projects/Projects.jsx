@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import Image from "../../assets/Frame 8.png";
+import Image from "../../assets/3DHeader.png";
+import HotelImage from "../../assets/hotelHeader.png"
+import AdminImage from "../../assets/adminHeader.png"
 const projectData = [
     {
         id: 1,
@@ -24,21 +26,21 @@ const projectData = [
             ' and MongoDB. Key functionalities include JWT-based user authentication with' +
             ' role-based access control',
         link: 'https://www.fortunaeitadmindashboard.com',
-        image: Image
+        image: AdminImage
     },
-    // {
-    //     id: 3,
-    //     title: 'FortunaeIT Hotel Booking Management',
-    //     name: 'FortunaeIT Hotel Booking Management',
-    //     description: 'The Hotel Management System is a full-stack application' +
-    //         ' built with Java Spring Boot for the backend and React for the ' +
-    //         'frontend. It streamlines hotel operations by enabling room browsing,' +
-    //         ' booking management, and guest tracking. Spring Boot powers RESTful APIs' +
-    //         'and integrates with MySQL via Spring Data JPA, while React delivers a ' +
-    //         'responsive UI with dynamic room listings and booking pages',
-    //     link: 'https://www.fortunaeithotelapp.com',
-    //     image: Image
-    // },
+    {
+        id: 3,
+        title: 'FortunaeIT Hotel Booking Management',
+        name: 'FortunaeIT Hotel Booking Management',
+        description: 'The Hotel Management System is a full-stack application' +
+            ' built with Java Spring Boot for the backend and React for the ' +
+            'frontend. It streamlines hotel operations by enabling room browsing,' +
+            ' booking management, and guest tracking. Spring Boot powers RESTful APIs' +
+            'and integrates with MySQL via Spring Data JPA, while React delivers a ' +
+            'responsive UI with dynamic room listings and booking pages',
+        link: 'https://www.fortunaeithotelapp.com',
+        image: HotelImage
+    },
     // {
     //     id: 4,
     //     title: 'FortunaeIT Library Management System',
