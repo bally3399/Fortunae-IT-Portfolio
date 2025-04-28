@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
 import Image from "../../assets/3DHeader.png";
-import HotelImage from "../../assets/hotelHeader.png"
+import HotelImage from "../../assets/HotelImage.png"
 import AdminImage from "../../assets/adminHeader.png"
 const projectData = [
     {
@@ -41,21 +41,7 @@ const projectData = [
         link: 'https://www.fortunaeithotelapp.com',
         image: HotelImage
     },
-    // {
-    //     id: 4,
-    //     title: 'FortunaeIT Library Management System',
-    //     name: 'FortunaeIT Library Management System',
-    //     description: 'The Library Management System is a full-stack' +
-    //         ' application developed using Java Spring Boot for ' +
-    //         'the backend and React for the frontend. It simplifies' +
-    //         ' library operations by facilitating book cataloging, ' +
-    //         'borrowing, and user management. Spring Boot drives RESTful' +
-    //         ' APIs and connects to Postgres via railway, while React' +
-    //         ' provides a responsive interface with dynamic book listings ' +
-    //         'and borrowing pages, styled with separate CSS classes.',
-    //     link: 'https://www.fortunaeitlibraryapp.com',
-    //     image: Image
-    // },
+
 
 ];
 
